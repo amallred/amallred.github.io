@@ -1,35 +1,44 @@
 *{
     font-family: 'Trebuchet MS';
     font-size: 16px;
-    color: #333;
+    color: var(--black);
 } 
+:root{
+    --black: #333;
+    --white: #e4f5ec;
+    --darkGreen: #3c5835;
+    --lightGreen: #92b6a4;
+    --darkPurple: #431457;
+    --lightPurple: #76637e;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;    
-    background: linear-gradient(135deg, #dae7d6, #3c5835 );
+    background: linear-gradient(135deg, var(--white), var(--darkGreen) );
 }
 body a {
-    color: #836c8b;
+    color: var(--lightPurple);
 }               
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 40px;
-    background: #e4f5ec;
-    border: solid #92b6a4;
+    background: var(--white);
+    border: solid var(--lightGreen);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 h1 {
     margin: 10px 0;
-    color: #431457;
+    color: var(--darkPurple);
     font-family: monospace;
     font-size: 32px;
 }
 h2 {
-    color: #431457;
+    color: var(--darkPurple);
     font-family: monospace;
     font-size: 26px;
 }
@@ -50,7 +59,7 @@ h2 {
 }
 .section h2 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #836c8b;
+    border-bottom: 2px solid var(--lightPurple);
     padding-bottom: 5px;
 }
 .item {
@@ -62,20 +71,20 @@ h2 {
 h3 {
     margin: 0;
     font-size: 18px;
-    color: #76637e;
+    color: var(--lightPurple);
     font-size: 18px;
     font-family: monospace;
 }
 h3 a{
     margin: 0;
     font-size: 18px;
-    color: #76637e;
+    color: var(--lightPurple);
     font-size: 18px;
     font-family: monospace;
 }
 .codeYou ul li {
     display: inline-block;
-    border: 1px solid #76637e;
+    border: 1px solid var(--lightPurple);
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 4px;
@@ -89,15 +98,15 @@ h3 a{
 .button{
     border-radius: 4px;
     border: none;
-    background-color: #2d4238;
+    background-color: var(--darkGreen);
     text-align: center;
     padding: 10px 10px;
     cursor: pointer;
     margin: 5px;
-    box-shadow: -4px 4px #92b6a4;
+    box-shadow: -4px 4px var(--lightGreen);
 }
 .button a{
-  color: #e4f5ec;
+  color: var(--white);
   text-decoration: none;  
 }
 .button:hover {
@@ -105,14 +114,14 @@ h3 a{
 }
 .button:active{
     background-color: #4c705f;
-    box-shadow: -1px 1px #2d4238;
+    box-shadow: -1px 1px var(--darkGreen);
     transform: translateY(2px);
 }
 /* independent projects buttons */
 .button2{
     border-radius: 4px;
     border: none;
-    background-color: #431457;
+    background-color: var(--darkPurple);
     text-align: center;
     padding: 10px 10px;
     cursor: pointer;
@@ -120,21 +129,21 @@ h3 a{
     box-shadow: -4px 4px #bcb3c0;
 }
 .button2 a{
-  color: #e4f5ec;
+  color: var(--white);
   text-decoration: none;  
 }
 .button2:hover {
-    background-color: #76637e;
+    background-color: var(--lightPurple);
 }
 .button2:active{
-    background-color: #76637e;
-    box-shadow: -1px 1px #431457;
+    background-color: var(--lightPurple);
+    box-shadow: -1px 1px var(--darkPurple);
     transform: translateY(2px);
 }
 footer{
     text-align: center;
     font-style: italic;
-    border-top: 2px solid #836c8b;
+    border-top: 2px solid var(--lightPurple);
     margin-top: 50px;
 }
 footer ul li{
@@ -146,21 +155,21 @@ footer ul li{
     margin: 10px;
 }
 .mainColor{
-    background-color: #2d4238;
+    background-color: var(--darkGreen);
 }
 .secondColor{
-    background-color: #431e53;
+    background-color: var(--darkPurple);
 }
 .thirdColor{
-    background-color: #4c705f;
+    background-color: var(--lightGreen) ;
 }
 .fourthColor{
-    background-color: #76637e;
+    background-color: var(--lightPurple);
 }
 .lightColor{
-    background-color: #e4f5ec;
-    border: solid 1px #333;
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 .textColor{
-    background-color: #333;    
+    background-color: var(--black);    
 }
