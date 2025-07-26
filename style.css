@@ -15,15 +15,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;    
     background: linear-gradient(135deg, var(--white), var(--darkGreen) );
+    background-attachment: fixed;     
 }
 body a {
     color: var(--lightPurple);
 }               
 .container {
     max-width: 800px;
+    min-height: 85vh;
     margin: 20px auto;
     padding: 40px;
     background: var(--white);
@@ -90,9 +90,11 @@ h3 a{
     border-radius: 4px;
 }
 
-/*button style help: https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
+
 .buttons{
     margin-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .button{
@@ -107,7 +109,15 @@ h3 a{
 }
 .button a{
   color: var(--white);
-  text-decoration: none;  
+  text-decoration: none;
+  font-weight: bold;  
+}
+.button p{
+    color: var(--white);
+    font-style: italic;
+}
+.button h3{
+    color: var(--white);
 }
 .button:hover {
     background-color: #4c705f;
@@ -117,6 +127,7 @@ h3 a{
     box-shadow: -1px 1px var(--darkGreen);
     transform: translateY(2px);
 }
+
 /* independent projects buttons */
 .button2{
     border-radius: 4px;
@@ -139,6 +150,10 @@ h3 a{
     background-color: var(--lightPurple);
     box-shadow: -1px 1px var(--darkPurple);
     transform: translateY(2px);
+}
+.square {
+    width: 20vw;
+    height: 20vh;
 }
 footer{
     text-align: center;
