@@ -65,7 +65,20 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    
     padding: 20px;
+    align-text: center;
 }
+
+.image {
+    display: grid;
+}
+.headshot{
+    width: 60dvw;
+    height: auto;
+    justify-self: center;
+    border-radius: 8px;
+}
+
+
 .buttons{
     display: flex;
     justify-content: center;
