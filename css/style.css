@@ -39,6 +39,7 @@ body {
 }
 .headers{
     font-family: monospace;
+    text-align: center;
 }
 .title {
     margin: 10px 0;
@@ -66,7 +67,6 @@ body {
     padding: 20px;
 }
 .buttons{
-    margin-left: 50px;
     display: flex;
     justify-content: center;
 }
@@ -110,52 +110,7 @@ body {
     margin: 5px 5px 5px 0;
     border-radius: 4px;
 }
-/* 
 
-h3 a{
-    margin: 0;
-    font-size: 18px;
-    color: var(--lightPurple);
-    font-size: 18px;
-    font-family: monospace;
-}
-
-
-
-
-
-
-
-
-
-
-/* independent projects buttons */
-.button2{
-    border-radius: 4px;
-    border: none;
-    background-color: var(--darkPurple);
-    text-align: center;
-    padding: 10px 10px;
-    cursor: pointer;
-    margin: 5px;
-    box-shadow: -4px 4px #bcb3c0;
-}
-.button2 a{
-  color: var(--white);
-  text-decoration: none;  
-}
-.button2:hover {
-    background-color: var(--lightPurple);
-}
-.button2:active{
-    background-color: var(--lightPurple);
-    box-shadow: -1px 1px var(--darkPurple);
-    transform: translateY(2px);
-}
-.square {
-    width: 20vw;
-    height: 20vh;
-}
 /* change to grid; make link legible */
 .footer{
     text-align: center;
@@ -171,22 +126,41 @@ footer ul li{
     padding: 10px;
     margin: 10px;
 }
-.mainColor{
+.main-color{
     background-color: var(--darkGreen);
 }
-.secondColor{
+.second-color{
     background-color: var(--darkPurple);
 }
-.thirdColor{
+.third-color{
     background-color: var(--lightGreen) ;
 }
-.fourthColor{
+.fourth-color{
     background-color: var(--lightPurple);
 }
-.lightColor{
+.light-color{
     background-color: var(--white);
     border: 1px solid var(--black);
 }
-.textColor{
+.text-color{
     background-color: var(--black);    
-} */
+} 
+
+
+
+/* independent projects buttons
+Change these to grid?*/
+.projects{
+    display: grid;
+}
+.button2{
+    background-color: var(--darkPurple);
+    box-shadow: -4px 4px #bcb3c0;
+}
+.button2:hover {
+    background-color: var(--lightPurple);
+}
+.button2:active{
+    background-color: var(--lightPurple);
+    box-shadow: -1px 1px var(--darkPurple);
+}
