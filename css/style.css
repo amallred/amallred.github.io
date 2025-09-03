@@ -18,79 +18,53 @@ body {
     background: linear-gradient(135deg, var(--white), var(--darkGreen) );
     background-attachment: fixed;     
 }
-body a {
+
+.link {
     color: var(--lightPurple);
+    text-decoration: underline;
+    font-weight:bold;
 }               
+
 .container {
-    max-width: 800px;
-    min-height: 85vh;
-    margin: 20px auto;
-    padding: 40px;
-    background: var(--white);
-    border: solid var(--lightGreen);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    margin: 10px 0;
-    color: var(--darkPurple);
-    font-family: monospace;
-    font-size: 32px;
-}
-h2 {
-    color: var(--darkPurple);
-    font-family: monospace;
-    font-size: 26px;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    /* max-width: 800px;
+    min-height: 85vh; */
+    /* margin: 1rem auto; */
+    /* grid-template-columns: 1fr 2fr; */
 }
 .header {
     text-align: center;
 }
-
-.contact {
+.headers{
+    font-family: monospace;
+}
+.title {
     margin: 10px 0;
-    font-size: 14px;
+    color: var(--darkPurple);
+    font-size: 32px;
 }
-.contact a {
-    text-decoration: underline;
-    font-weight:bold;
-}
-.section {
-    margin: 20px 0;
-}
-.section h2 {
+.subtitle {
+    color: var(--darkPurple);
+    font-size: 26px;
     margin-bottom: 10px;
     border-bottom: 2px solid var(--lightPurple);
     padding-bottom: 5px;
 }
-.item {
-    margin-bottom: 15x;
-}
-.item p {
-    font-style: italic;
-}
-h3 {
+.heading {
     margin: 0;
     font-size: 18px;
     color: var(--lightPurple);
     font-size: 18px;
-    font-family: monospace;
 }
-h3 a{
-    margin: 0;
-    font-size: 18px;
-    color: var(--lightPurple);
-    font-size: 18px;
-    font-family: monospace;
+.section{
+    background: var(--white);
+    border: solid var(--lightGreen);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    
+    padding: 20px;
 }
-.codeYou ul li {
-    display: inline-block;
-    border: 1px solid var(--lightPurple);
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
-    border-radius: 4px;
-}
-
-
 .buttons{
     margin-left: 50px;
     display: flex;
@@ -108,9 +82,9 @@ h3 a{
     box-shadow: -4px 4px var(--lightGreen);
 }
 .button a{
-  color: var(--white);
-  text-decoration: none;
-  font-weight: bold;  
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;  
 }
 .button p{
     color: var(--white);
@@ -127,6 +101,33 @@ h3 a{
     box-shadow: -1px 1px var(--darkGreen);
     transform: translateY(2px);
 }
+
+/* edit these */
+.codeYou ul li { 
+    display: inline-block;
+    border: 1px solid var(--lightPurple);
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px;
+}
+/* 
+
+h3 a{
+    margin: 0;
+    font-size: 18px;
+    color: var(--lightPurple);
+    font-size: 18px;
+    font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
 
 /* independent projects buttons */
 .button2{
@@ -155,7 +156,8 @@ h3 a{
     width: 20vw;
     height: 20vh;
 }
-footer{
+/* change to grid; make link legible */
+.footer{
     text-align: center;
     font-style: italic;
     border-top: 2px solid var(--lightPurple);
@@ -187,4 +189,4 @@ footer ul li{
 }
 .textColor{
     background-color: var(--black);    
-}
+} */
