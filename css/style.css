@@ -28,6 +28,7 @@ body {
 .container {
     padding: 1rem;
     display: grid;
+    justify-content: center;
     gap: 1rem;
     /* max-width: 800px;
     min-height: 85vh; */
@@ -65,17 +66,23 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    
     padding: 20px;
-    align-text: center;
+    max-width: 900px;
+    display: grid;
+    justify-content: center;
 }
 
-.image {
+.about-me {
     display: grid;
+    justify-content: center;
+    max-width: 600px;
 }
+
 .headshot{
-    width: 60dvw;
+    width: 80%;
     height: auto;
-    justify-self: center;
     border-radius: 8px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 
@@ -130,6 +137,7 @@ body {
     font-style: italic;
     border-top: 2px solid var(--lightPurple);
     margin-top: 50px;
+    background-color: var(--darkGreen);
 }
 footer ul li{
     display:inline-block;
@@ -139,6 +147,14 @@ footer ul li{
     padding: 10px;
     margin: 10px;
 }
+.footer p{
+    color: var(--lightGreen);
+}
+.footer .link {
+    color: var(--lightGreen);
+}
+
+
 .main-color{
     background-color: var(--darkGreen);
 }
@@ -176,4 +192,12 @@ Change these to grid?*/
 .button2:active{
     background-color: var(--lightPurple);
     box-shadow: -1px 1px var(--darkPurple);
+}
+
+@media screen and (min-width: 768px){
+    .about-me {
+        grid-template-columns: 1fr 1fr;        
+    }
+    .bio {
+        max-width: 900px;
 }
